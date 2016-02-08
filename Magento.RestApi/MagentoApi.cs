@@ -78,7 +78,6 @@ namespace Magento.RestApi
             _client = new RestClient(_url);
 
             _client.AddDefaultHeader("Content-Type", "application/json");
-            // Seriously Magento? http://www.magentocommerce.com/boards/viewthread/295646/
             _client.AddDefaultHeader("Content_Type", "application/json");
 
             _client.ClearHandlers(); // http://stackoverflow.com/questions/22229393/why-is-restsharp-addheaderaccept-application-json-to-a-list-of-item
